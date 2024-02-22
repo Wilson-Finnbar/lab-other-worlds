@@ -1,0 +1,90 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{forestgreen4416044}{RGB}{44,160,44}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+height=8cm,
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.03)},
+  anchor=south west,
+  draw=lightgray204
+},
+tick align=outside,
+tick pos=left,
+width=13cm,
+x grid style={darkgray176},
+xlabel={Time},
+xmin=0, xmax=11,
+xtick style={color=black},
+xtick={0,1,2,3,4,5,6,7,8,9,10,11},
+xtick={0,1,2,3,4,5,6,7,8,9,10,11},
+xtick={0,1,2,3,4,5,6,7,8,9,10,11},
+xticklabel style={rotate=90.0},
+xticklabels={04:32:20,04:43:09,04:55:25,05:07:43,05:21:05,05:33:25,05:45:00,05:56:35,06:08:11,06:19:44,06:31:20,06:42:55},
+xticklabels={04:32:20,04:43:09,04:55:25,05:07:43,05:21:05,05:33:25,05:45:00,05:56:35,06:08:11,06:19:44,06:31:20,06:42:55},
+xticklabels={04:32:20,04:43:09,04:55:25,05:07:43,05:21:05,05:33:25,05:45:00,05:56:35,06:08:11,06:19:44,06:31:20,06:42:55},
+y grid style={darkgray176},
+ylabel={Normalised flux},
+ymin=1.2, ymax=1.8,
+ytick style={color=black}
+]
+\addplot [semithick, steelblue31119180, mark=*, mark size=3, mark options={solid}]
+table {%
+0 1.70955085079128
+1 1.59430466159548
+2 1.68190645735556
+3 1.6822635117473
+4 1.61984282907662
+5 1.62386297658216
+6 1.62841792190348
+7 1.61355517954503
+8 1.64306812767985
+9 1.66926439840335
+10 1.67448236740096
+11 1.68950464983868
+};
+\addlegendentry{Flux 1}
+\addplot [semithick, darkorange25512714, mark=*, mark size=3, mark options={solid}]
+table {%
+0 1.6344262295082
+1 1.38683406854428
+2 1.40451051609089
+3 1.2698500394633
+4 1.26311757947147
+5 1.27738448656466
+6 1.28447101558953
+7 1.28992259712933
+8 1.32229123533471
+9 1.34250554154246
+10 1.3330573536053
+11 1.35877280012211
+};
+\addlegendentry{Flux 2}
+\addplot [semithick, forestgreen4416044, mark=*, mark size=3, mark options={solid}]
+table {%
+0 1.5766511627907
+1 1.59399375975039
+2 1.64503363672339
+3 1.49902170874872
+4 1.50593607305936
+5 1.4847814546098
+6 1.50897937411095
+7 1.52293496584154
+8 1.51849242691088
+9 1.52624261383385
+10 1.56030305699938
+11 1.55915579297662
+};
+\addlegendentry{Flux 3}
+\end{axis}
+
+\end{tikzpicture}
